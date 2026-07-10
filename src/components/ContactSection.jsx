@@ -11,22 +11,26 @@ export default function ContactSection() {
           <p className={styles.subtitle}>Escribinos por WhatsApp y te respondemos a la brevedad.</p>
         </div>
         <div className={styles.actions}>
-          <a 
-            href={generateWhatsappLink('Hola LIVRE, quería hacer una consulta general.')} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className={styles.primaryBtn}
-          >
-            Consultar por WhatsApp
-          </a>
-          <a 
-            href={businessInfo.social.instagram} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className={styles.secondaryBtn}
-          >
-            Seguinos en Instagram
-          </a>
+          {generateWhatsappLink('Hola LIVRE, quería hacer una consulta general.') && (
+            <a 
+              href={generateWhatsappLink('Hola LIVRE, quería hacer una consulta general.')} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className={styles.primaryBtn}
+            >
+              Consultar por WhatsApp
+            </a>
+          )}
+          {businessInfo.social.instagram && (
+            <a 
+              href={businessInfo.social.instagram} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className={styles.secondaryBtn}
+            >
+              Seguinos en Instagram
+            </a>
+          )}
         </div>
         <div className={styles.faqs}>
           <div className={styles.faq}>

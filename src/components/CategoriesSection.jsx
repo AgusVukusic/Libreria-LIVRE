@@ -15,14 +15,16 @@ export default function CategoriesSection() {
             <article key={cat.id} className={styles.card}>
               <h3 className={styles.cardTitle}>{cat.name}</h3>
               <p className={styles.cardDesc}>{cat.description}</p>
-              <a 
-                href={generateWhatsappLink(`Hola LIVRE, quería consultar sobre productos de la categoría: ${cat.name}.`)} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className={styles.link}
-              >
-                Consultar
-              </a>
+              {generateWhatsappLink(`Hola LIVRE, quería consultar sobre productos de la categoría: ${cat.name}.`) && (
+                <a 
+                  href={generateWhatsappLink(`Hola LIVRE, quería consultar sobre productos de la categoría: ${cat.name}.`)} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className={styles.link}
+                >
+                  Consultar
+                </a>
+              )}
             </article>
           ))}
         </div>

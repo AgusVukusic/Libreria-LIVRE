@@ -14,14 +14,16 @@ export default function HeroSection() {
             Todo para el cole, la oficina y tus proyectos creativos. Encontrá útiles, impresiones y anillados en un solo lugar.
           </p>
           <div className={styles.actions}>
-            <a 
-              href={generateWhatsappLink()} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className={styles.primaryBtn}
-            >
-              Consultar por WhatsApp
-            </a>
+            {generateWhatsappLink() && (
+              <a 
+                href={generateWhatsappLink()} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className={styles.primaryBtn}
+              >
+                Consultar por WhatsApp
+              </a>
+            )}
             <a href="#productos" className={styles.secondaryBtn}>
               Ver productos
             </a>

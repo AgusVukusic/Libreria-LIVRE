@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LIVRE - Landing Page MVP
 
-## Getting Started
+Demo conceptual de la Landing Page para la Librería LIVRE (Hudson).
 
-First, run the development server:
+## Tecnologías Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Framework**: [Next.js](https://nextjs.org/) (App Router)
+- **Estilos**: CSS Modules (Vanilla CSS)
+- **Deployment**: Vercel / Netlify
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Instalación y Desarrollo Local
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+1. Clonar el repositorio:
+   ```bash
+   git clone <repo-url>
+   cd Libreria-LIVRE
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Configurar variables de entorno:
+   Copiar `.env.example` a `.env.local` y ajustar los valores necesarios (ver sección "Variables de Entorno").
 
-## Learn More
+3. Instalar dependencias:
+   ```bash
+   npm ci
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. Iniciar el servidor de desarrollo:
+   ```bash
+   npm run dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+5. Abrir [http://localhost:3000](http://localhost:3000) en tu navegador.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Variables de Entorno
 
-## Deploy on Vercel
+El proyecto requiere las siguientes variables de entorno (ver `.env.example`):
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `NEXT_PUBLIC_SITE_MODE`: Configurar como `demo` o `production`. Modifica el indexado SEO y banners.
+- `NEXT_PUBLIC_SITE_URL`: URL base del sitio (ej. `http://localhost:3000` o la URL de Vercel/Producción).
+- `NEXT_PUBLIC_WHATSAPP_NUMBER`: Número de WhatsApp en formato internacional (compatible con wa.me, sin +, espacios, ni guiones).
+- `NEXT_PUBLIC_INSTAGRAM_URL`: URL completa del perfil de Instagram.
+- `NEXT_PUBLIC_MAPS_URL`: URL completa del mapa de Google Maps.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Modo Demo
+
+Para mantener la naturaleza demostrativa y proteger la identidad comercial original, si `NEXT_PUBLIC_SITE_MODE` está configurado como `demo`:
+- Se agrega la etiqueta SEO `noindex, nofollow` para evitar rastreos de motores de búsqueda.
+- Se oculta el sitemap del rastreo general.
+- El aviso legal de "Todos los derechos reservados" en el footer se adapta a un modo ilustrativo.

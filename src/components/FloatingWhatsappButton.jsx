@@ -2,9 +2,13 @@ import { generateWhatsappLink } from '../utils/whatsapp';
 import styles from './FloatingWhatsappButton.module.css';
 
 export default function FloatingWhatsappButton() {
+  const whatsappLink = generateWhatsappLink();
+  
+  if (!whatsappLink) return null;
+
   return (
     <a 
-      href={generateWhatsappLink()} 
+      href={whatsappLink} 
       target="_blank" 
       rel="noopener noreferrer"
       className={styles.floatingBtn}
