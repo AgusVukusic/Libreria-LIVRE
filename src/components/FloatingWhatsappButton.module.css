@@ -1,0 +1,27 @@
+.floatingBtn {
+  position: fixed;
+  bottom: var(--spacing-xl);
+  right: var(--spacing-md);
+  background-color: var(--color-whatsapp);
+  color: white;
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-lg);
+  z-index: 1000;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.floatingBtn:hover {
+  background-color: var(--color-whatsapp-dark);
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .floatingBtn {
+    right: var(--spacing-xl);
+  }
+}
