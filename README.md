@@ -37,7 +37,7 @@ El proyecto requiere las siguientes variables de entorno (ver `.env.example`):
 
 - `NEXT_PUBLIC_SITE_MODE`: Configurar como `demo` o `production`. Modifica el indexado SEO y banners.
 - `NEXT_PUBLIC_SITE_URL`: URL base del sitio (ej. `http://localhost:3000` o la URL de Vercel/Producción).
-- `NEXT_PUBLIC_WHATSAPP_NUMBER`: Número de WhatsApp en formato internacional (ej. `1157617001` sin +, espacios, ni guiones).
+- `NEXT_PUBLIC_WHATSAPP_NUMBER`: Número de WhatsApp en formato internacional (compatible con wa.me, sin +, espacios, ni guiones).
 - `NEXT_PUBLIC_INSTAGRAM_URL`: URL completa del perfil de Instagram.
 - `NEXT_PUBLIC_MAPS_URL`: URL completa del mapa de Google Maps.
 
