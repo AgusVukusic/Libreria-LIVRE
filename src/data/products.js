@@ -5,6 +5,7 @@ export const products = [
     category: 'Escolar',
     description: 'Cuaderno espiralado 84 hojas rayadas o cuadriculadas.',
     imageUrl: null, // Placeholder will be handled in UI
+    imageAlt: 'Cuaderno Universitario',
   },
   {
     id: 'resma-a4',
@@ -12,6 +13,7 @@ export const products = [
     category: 'Oficina',
     description: 'Resma de papel blanco 75g x 500 hojas.',
     imageUrl: null,
+    imageAlt: 'Resma A4',
   },
   {
     id: 'marcadores',
@@ -19,6 +21,7 @@ export const products = [
     category: 'Escolar',
     description: 'Caja x 12 colores lavables. Punta cónica.',
     imageUrl: null,
+    imageAlt: 'Marcadores Escolares',
   },
   {
     id: 'plasticola',
@@ -26,6 +29,7 @@ export const products = [
     category: 'Escolar',
     description: 'Voligoma o Plasticola 50g. Lavable, no tóxico.',
     imageUrl: null,
+    imageAlt: 'Adhesivo Sintético',
   },
   {
     id: 'carpetas',
@@ -33,6 +37,7 @@ export const products = [
     category: 'Escolar',
     description: 'Carpeta de fibra negra, 3 anillos, ideal para primaria.',
     imageUrl: null,
+    imageAlt: 'Carpeta N°3',
   },
   {
     id: 'cartulinas',
@@ -40,6 +45,7 @@ export const products = [
     category: 'Papelería',
     description: 'Amplia variedad de colores plenos. Tamaño estándar.',
     imageUrl: null,
+    imageAlt: 'Cartulinas Color',
   },
   {
     id: 'block-dibujo',
@@ -47,6 +53,7 @@ export const products = [
     category: 'Artística',
     description: 'Block de hojas blancas opacas, 24 hojas.',
     imageUrl: null,
+    imageAlt: 'Block de Dibujo N°5',
   },
   {
     id: 'kit-escolar',
@@ -54,5 +61,6 @@ export const products = [
     category: 'Promos Escolares',
     description: 'Lápiz, goma, sacapuntas, regla y bolígrafo azul.',
     imageUrl: null,
+    imageAlt: 'Kit Escolar Básico',
   }
 ];

@@ -15,20 +15,22 @@ export default function Footer() {
           <p className={styles.desc}>{businessInfo.description}</p>
         </div>
         <div className={styles.links}>
-          <h4>Contacto</h4>
+          <h3>Contacto</h3>
           <ul>
             <li>{businessInfo.schedule}</li>
             <li>{businessInfo.location.address}</li>
-            <li>
-              <a href={businessInfo.social.instagram} target="_blank" rel="noopener noreferrer">
-                Instagram
-              </a>
-            </li>
+            {businessInfo.social.instagram && (
+              <li>
+                <a href={businessInfo.social.instagram} target="_blank" rel="noopener noreferrer">
+                  Instagram
+                </a>
+              </li>
+            )}
           </ul>
         </div>
       </div>
       <div className={styles.copy}>
-        © {new Date().getFullYear()} {businessInfo.name}. Todos los derechos reservados.
+        © {new Date().getFullYear()} {businessInfo.name}. {isDemoMode ? '' : 'Todos los derechos reservados.'}
       </div>
     </footer>
   );

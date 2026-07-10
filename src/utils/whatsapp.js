@@ -7,6 +7,7 @@ import { businessInfo } from '../data/businessInfo';
  */
 export const generateWhatsappLink = (customMessage) => {
   const number = businessInfo.whatsapp.number;
+  if (!number) return null;
   const message = customMessage || businessInfo.whatsapp.defaultMessage;
   
   return `https://wa.me/${number}?text=${encodeURIComponent(message)}`;

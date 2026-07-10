@@ -11,14 +11,16 @@ export default function PromoSection() {
           <h2 className={styles.title}>{promos.title}</h2>
           <p className={styles.subtitle}>{promos.subtitle}</p>
           <p className={styles.desc}>{promos.description}</p>
-          <a 
-            href={generateWhatsappLink(`Hola LIVRE, quería consultar por la promo de ${promos.title}: listas escolares y kits.`)} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className={styles.button}
-          >
-            {promos.ctaText}
-          </a>
+          {generateWhatsappLink(promos.whatsappMessage) && (
+            <a 
+              href={generateWhatsappLink(promos.whatsappMessage)} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className={styles.button}
+            >
+              {promos.ctaText}
+            </a>
+          )}
         </div>
       </div>
     </section>

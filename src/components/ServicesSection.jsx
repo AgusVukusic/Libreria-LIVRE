@@ -16,14 +16,16 @@ export default function ServicesSection() {
               <div className={styles.icon} aria-hidden="true">{service.icon}</div>
               <h3 className={styles.cardTitle}>{service.title}</h3>
               <p className={styles.cardDesc}>{service.description}</p>
-              <a 
-                href={generateWhatsappLink(`Hola LIVRE, quería consultar por ${service.title.toLowerCase()}.`)} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className={styles.link}
-              >
-                Consultar
-              </a>
+              {generateWhatsappLink(`Hola LIVRE, quería consultar sobre el servicio de: ${service.title}.`) && (
+                <a 
+                  href={generateWhatsappLink(`Hola LIVRE, quería consultar sobre el servicio de: ${service.title}.`)} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className={styles.link}
+                >
+                  Consultar
+                </a>
+              )}
             </article>
           ))}
         </div>
