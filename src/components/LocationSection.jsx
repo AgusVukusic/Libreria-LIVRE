@@ -18,6 +18,7 @@ export default function LocationSection() {
               target="_blank" 
               rel="noopener noreferrer"
               className={styles.button}
+              aria-label="Cómo llegar a LIVRE con Google Maps"
             >
               Cómo llegar
             </a>

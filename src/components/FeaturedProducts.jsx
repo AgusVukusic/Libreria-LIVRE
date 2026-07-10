@@ -27,9 +27,9 @@ export default function FeaturedProducts() {
                 <span className={styles.category}>{product.category}</span>
                 <h3 className={styles.productName}>{product.name}</h3>
                 <p className={styles.productDesc}>{product.description}</p>
-                {generateWhatsappLink(`Hola LIVRE, quería consultar sobre el producto destacado: ${product.name}.`) && (
+                {generateWhatsappLink(`Hola, quería consultar disponibilidad y precio de: ${product.name}.`) && (
                   <a 
-                    href={generateWhatsappLink(`Hola LIVRE, quería consultar sobre el producto destacado: ${product.name}.`)} 
+                    href={generateWhatsappLink(`Hola, quería consultar disponibilidad y precio de: ${product.name}.`)} 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className={styles.button}

@@ -11,9 +11,9 @@ export default function ContactSection() {
           <p className={styles.subtitle}>Escribinos por WhatsApp y te respondemos a la brevedad.</p>
         </div>
         <div className={styles.actions}>
-          {generateWhatsappLink('Hola LIVRE, quería hacer una consulta general.') && (
+          {generateWhatsappLink('Hola, quería hacer una consulta sobre sus productos.') && (
             <a 
-              href={generateWhatsappLink('Hola LIVRE, quería hacer una consulta general.')} 
+              href={generateWhatsappLink('Hola, quería hacer una consulta sobre sus productos.')} 
               target="_blank" 
               rel="noopener noreferrer"
               className={styles.primaryBtn}
@@ -27,6 +27,7 @@ export default function ContactSection() {
               target="_blank" 
               rel="noopener noreferrer"
               className={styles.secondaryBtn}
+              aria-label="Seguir a LIVRE en Instagram"
             >
               Seguinos en Instagram
             </a>

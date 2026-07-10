@@ -21,8 +21,8 @@ export default function Footer() {
             <li>{businessInfo.location.address}</li>
             {businessInfo.social.instagram && (
               <li>
-                <a href={businessInfo.social.instagram} target="_blank" rel="noopener noreferrer">
-                  Instagram
+                <a href={businessInfo.social.instagram} target="_blank" rel="noopener noreferrer" aria-label="Seguir a LIVRE en Instagram">
+                  @livrelibreria
                 </a>
               </li>
             )}
