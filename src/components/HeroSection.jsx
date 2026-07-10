@@ -30,7 +30,7 @@ export default function HeroSection() {
         <div className={styles.visual}>
           {/* Visual placeholder relacionado con librería */}
           <div className={styles.placeholderImage}>
-            <span className={styles.emoji}>📚🎨✏️</span>
+            <span className={styles.emoji} aria-hidden="true">📚🎨✏️</span>
           </div>
         </div>
       </div>

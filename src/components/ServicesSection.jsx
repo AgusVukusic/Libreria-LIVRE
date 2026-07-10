@@ -13,7 +13,7 @@ export default function ServicesSection() {
         <div className={styles.grid}>
           {services.map((service) => (
             <article key={service.id} className={styles.card}>
-              <div className={styles.icon}>{service.icon}</div>
+              <div className={styles.icon} aria-hidden="true">{service.icon}</div>
               <h3 className={styles.cardTitle}>{service.title}</h3>
               <p className={styles.cardDesc}>{service.description}</p>
               <a 

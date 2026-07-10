@@ -13,7 +13,7 @@ export default function FeaturedProducts() {
         <div className={styles.grid}>
           {products.map((product) => (
             <article key={product.id} className={styles.card}>
-              <div className={styles.imagePlaceholder}>
+              <div className={styles.imagePlaceholder} aria-hidden="true">
                 <span className={styles.imageText}>LIVRE</span>
               </div>
               <div className={styles.content}>

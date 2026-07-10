@@ -23,7 +23,7 @@ export default function LocationSection() {
         </div>
         <div className={styles.mapPlaceholder}>
           <div className={styles.placeholderText}>
-            <span>🗺️</span>
+            <span aria-hidden="true">🗺️</span>
             <p>Mapa de Hudson</p>
           </div>
         </div>

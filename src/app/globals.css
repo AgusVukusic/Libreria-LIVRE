@@ -8,8 +8,8 @@
   --color-text: #1f2937;
   --color-text-light: #4b5563;
   --color-border: #e5e7eb;
-  --color-whatsapp: #25d366;
-  --color-whatsapp-dark: #128c7e;
+  --color-whatsapp: #128c7e; /* Darkened for accessibility contrast with white text */
+  --color-whatsapp-dark: #075e54;
 
   /* Typography */
   --font-base: 'Inter', system-ui, -apple-system, sans-serif;
