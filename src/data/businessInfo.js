@@ -6,15 +6,17 @@ export const businessInfo = {
   name: "LIVRE",
   description: "Librería escolar, artística y fotocopias en Hudson.",
   whatsapp: {
-    number: siteConfig.whatsappNumber,
-    defaultMessage: "Hola LIVRE, quería hacer una consulta sobre sus productos.",
+    number: isDemoMode ? siteConfig.demoWhatsappNumber : siteConfig.productionWhatsappNumber,
+    defaultMessage: isDemoMode 
+      ? "[DEMO LIVRE] Hola, quería hacer una consulta sobre sus productos." 
+      : "Hola LIVRE, quería hacer una consulta sobre sus productos.",
   },
   location: {
     address: "Hudson, Berazategui",
-    mapUrl: siteConfig.mapsUrl,
+    mapUrl: isDemoMode ? siteConfig.demoMapsUrl : siteConfig.productionMapsUrl,
   },
   social: {
-    instagram: siteConfig.instagramUrl,
+    instagram: isDemoMode ? siteConfig.demoInstagramUrl : siteConfig.productionInstagramUrl,
   },
-  schedule: "Lunes a Sabados de 10 a 20 hs, Domingos de 10 a 19 hs.",
+  schedule: "Lunes a Sábados de 10 a 20 hs, Domingos de 10 a 19 hs.",
 };
