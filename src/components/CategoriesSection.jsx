@@ -4,7 +4,7 @@ import styles from './CategoriesSection.module.css';
 
 export default function CategoriesSection() {
   return (
-    <section className={styles.section}>
+    <section id="categorias" className={styles.section}>
       <div className={`container`}>
         <div className={styles.header}>
           <h2 className={styles.title}>Categorías</h2>

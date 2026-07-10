@@ -1,0 +1,95 @@
+.section {
+  padding: var(--spacing-2xl) 0;
+  background-color: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+}
+
+.contactInner {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header {
+  margin-bottom: var(--spacing-xl);
+}
+
+.title {
+  font-size: 2rem;
+  color: var(--color-secondary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.subtitle {
+  color: var(--color-text-light);
+  font-size: 1.125rem;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-2xl);
+  justify-content: center;
+}
+
+@media (min-width: 640px) {
+  .actions {
+    flex-direction: row;
+  }
+}
+
+.primaryBtn, .secondaryBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-md) var(--spacing-xl);
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.primaryBtn {
+  background-color: var(--color-whatsapp);
+  color: white;
+  font-size: 1.125rem;
+}
+
+.primaryBtn:hover {
+  background-color: var(--color-whatsapp-dark);
+}
+
+.secondaryBtn {
+  background-color: transparent;
+  color: var(--color-text);
+  border: 2px solid var(--color-border);
+}
+
+.secondaryBtn:hover {
+  border-color: var(--color-secondary);
+  color: var(--color-secondary);
+}
+
+.faqs {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+  text-align: left;
+}
+
+@media (min-width: 640px) {
+  .faqs {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.faq h3 {
+  font-size: 1.125rem;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-xs);
+}
+
+.faq p {
+  color: var(--color-text-light);
+  font-size: 0.875rem;
+}

@@ -41,6 +41,11 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* offset for sticky header */
+}
+
 body {
   font-family: var(--font-base);
   background-color: var(--color-background);
